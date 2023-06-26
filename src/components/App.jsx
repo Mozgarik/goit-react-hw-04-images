@@ -84,7 +84,7 @@ const handleFormSubmit = query => {
         tags={photoTags}
         onClickImg={onClickImg}
         />}
-        {photo.length > 0 && <Button incrementPage={loadMore}/>}   
+        {photo.length >= 12 && <Button incrementPage={loadMore}/>}   
         <ToastContainer autoClose={3000}/>
         </div>
     )
